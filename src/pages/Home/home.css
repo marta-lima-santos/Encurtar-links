@@ -1,0 +1,103 @@
+.container-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 60px;
+}
+
+.logo span {
+    margin-top: 14px;
+    margin-bottom: 34px;
+    font-size: 19px;
+}
+
+.input {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: move 2s;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(90px);
+      }
+    
+      to {
+        transform: translateY(0);
+      }
+}
+
+
+.input div {
+    width: 100%;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.input svg {
+    margin: 0 8px;
+}
+
+.input input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+.input button {
+    position: relative;
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 6px ;
+    background: rgb(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.input button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media (max-width: 555px) {
+    .logo img {
+        width: 95px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    .input {
+        width: 80%;
+    }
+}

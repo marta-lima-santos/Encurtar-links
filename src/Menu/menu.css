@@ -1,0 +1,19 @@
+.main {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    font-weight: bold;
+    display: flex;
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.main-item {
+    color: #000;
+    background-color:#53a8b6;
+    padding: 12px 24px;
+    border: 4px;
+    border-radius: 6px;
+}
